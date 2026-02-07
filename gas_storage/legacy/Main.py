@@ -1,9 +1,9 @@
+import streamlit as st
 from utils import (
+    authentication_process,
     check_session_initialization,
     reset_session_state,
-    authentication_process,
 )
-import streamlit as st
 
 
 def main():
@@ -13,8 +13,7 @@ def main():
     check_session_initialization()
 
     st.header("Manual")
-    st.write(
-        """
+    st.write("""
         This is an application for gas storage optimization.
 
         To start, first import prices on Prices tab.
@@ -26,8 +25,7 @@ def main():
         Each storage can be then optimized on Optimize tab, or you can run optimization for all of the storages.
 
         After successful optimization you can find table and graph export of each storage on Export and Graph tabs. You can also download these exports and see total export of all storages.
-        """
-    )
+        """)
 
     st.button(
         "Restart session",

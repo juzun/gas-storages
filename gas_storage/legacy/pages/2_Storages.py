@@ -1,13 +1,15 @@
-from utils import (
-    check_session_initialization,
-    check_for_uploaded_prices,
-    initialize_storage,
-    check_for_duplicate_storage_names,
-    authentication_check,
-)
-import streamlit as st
 import datetime as dt
 from typing import Optional
+
+import streamlit as st
+from utils import (
+    authentication_check,
+    check_for_duplicate_storage_names,
+    check_for_uploaded_prices,
+    check_session_initialization,
+    initialize_storage,
+)
+
 
 st.set_page_config(layout="wide")
 

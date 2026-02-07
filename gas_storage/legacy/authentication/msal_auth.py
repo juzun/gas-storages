@@ -1,10 +1,11 @@
-import streamlit as st
-from msal_streamlit_authentication import msal_authentication
-import config
 import logging
+
+import config
+from msal_streamlit_authentication import msal_authentication
 
 # type: ignore
 import requests
+import streamlit as st
 
 
 def streamlit_authenticate(allowed_ids: list[str]) -> None:

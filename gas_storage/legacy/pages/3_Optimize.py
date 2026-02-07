@@ -1,12 +1,13 @@
+import streamlit as st
 from utils import (
-    check_session_initialization,
-    check_for_uploaded_prices,
+    authentication_check,
     check_for_initialized_storages,
+    check_for_uploaded_prices,
+    check_session_initialization,
     solve_all_button,
     solve_button,
-    authentication_check,
 )
-import streamlit as st
+
 
 st.set_page_config(layout="wide")
 

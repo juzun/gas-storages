@@ -76,12 +76,13 @@
 #     unittest.main()
 
 
-import pytest
 import datetime as dt
-from src.gas_storage_optim.gs_optim import GasStorage
-from src.gas_storage_optim.gs_optim_tools import collect
+
 import numpy as np
 import pandas as pd
+import pytest
+from src.gas_storage_optim.gs_optim import GasStorage
+from src.gas_storage_optim.gs_optim_tools import collect
 
 
 @pytest.fixture

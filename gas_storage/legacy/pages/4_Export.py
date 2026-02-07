@@ -1,14 +1,15 @@
+import streamlit as st
 from utils import (
-    check_session_initialization,
-    check_for_uploaded_prices,
+    authentication_check,
     check_for_initialized_storages,
     check_for_solved_storages,
+    check_for_uploaded_prices,
+    check_session_initialization,
     collect_storages,
-    total_export_to_xlsx,
     export_to_xlsx,
-    authentication_check,
+    total_export_to_xlsx,
 )
-import streamlit as st
+
 
 st.set_page_config(layout="wide")
 

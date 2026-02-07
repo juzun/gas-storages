@@ -1,5 +1,6 @@
-from utils import check_session_initialization, import_prices, authentication_check
 import streamlit as st
+from utils import authentication_check, check_session_initialization, import_prices
+
 
 st.set_page_config(layout="wide")
 

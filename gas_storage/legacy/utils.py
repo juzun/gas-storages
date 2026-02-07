@@ -1,16 +1,17 @@
-from gas_storage_optim.gs_optim import GasStorage
-from gas_storage_optim.gs_optim_tools import collect
-# from authentication.msal_auth import streamlit_authenticate
-
-# from config import ALLOWED_IDS
-from typing import Tuple
 import datetime as dt
-import numpy as np
-import pandas as pd
-import streamlit as st
-import plotly.graph_objects as po
 import io
 import json
+
+# from authentication.msal_auth import streamlit_authenticate
+# from config import ALLOWED_IDS
+from typing import Tuple
+
+from gas_storage_optim.gs_optim import GasStorage
+from gas_storage_optim.gs_optim_tools import collect
+import numpy as np
+import pandas as pd
+import plotly.graph_objects as po
+import streamlit as st
 
 
 def authentication_process():
