@@ -140,6 +140,7 @@ archiv.txt
 *.pkl
 *.csv
 *.csv.gz
+*.pdf
 
 # Copilot
 .github/

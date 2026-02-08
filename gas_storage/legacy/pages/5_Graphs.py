@@ -9,7 +9,6 @@ from utils import (
     get_graph,
 )
 
-
 st.set_page_config(layout="wide")
 
 authentication_check()

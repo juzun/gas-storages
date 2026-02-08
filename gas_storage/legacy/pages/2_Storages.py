@@ -10,7 +10,6 @@ from utils import (
     initialize_storage,
 )
 
-
 st.set_page_config(layout="wide")
 
 authentication_check()

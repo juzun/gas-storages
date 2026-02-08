@@ -10,7 +10,6 @@ from utils import (
     total_export_to_xlsx,
 )
 
-
 st.set_page_config(layout="wide")
 
 authentication_check()
