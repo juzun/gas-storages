@@ -13,7 +13,7 @@ class GasPriceSimulations:
         self.n_paths = n_paths
         self.index: pd.DatetimeIndex | None = None
 
-    def get_simulations(self) -> np.ndarray:
+    def get_simulations(self, number_of_simulations: int) -> np.ndarray:
         p_series = self.get_gas_fwd()
         p = p_series.values
 
@@ -29,7 +29,7 @@ class GasPriceSimulations:
         # fix last price
         mu[-1] = p[-1]
 
-        paths = self.simulate_gas_spot(p=p, mu=mu, kappa=kappa, sigma=sigma, dt=dt, n_paths=1000)
+        paths = self.simulate_gas_spot(p=p, mu=mu, kappa=kappa, sigma=sigma, dt=dt, n_paths=number_of_simulations)
 
         return paths
 
