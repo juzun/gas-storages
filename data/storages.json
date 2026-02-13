@@ -1,0 +1,80 @@
+[
+    {
+        "GasStorageName": "Abraham",
+        "InjectionSeason": [4, 5, 6, 7, 8, 9],
+        "StatesToDate": {"5": 0.05, "7": 0.3, "9": 0.6, "11": 0.9},
+        "DatesToEmptyStorage": [],
+        "InjectionCurve": [
+            [0,20,48,75],
+            [20,48,75,100],
+            [30,50,100,65]
+        ],
+        "WithdrawalCurve": [
+            [0,35,72,85],
+            [35,72,85,100],
+            [55,100,73,40]
+        ],
+        "TimePeriods": [
+            {
+                "StartDate": "2023-04-01",
+                "EndDate": "2024-03-31",
+                "WGV": 150000,
+                "InjectionRate": 2300,
+                "WithdrawalRate": 3000
+            },
+            {
+                "StartDate": "2024-04-01",
+                "EndDate": "2025-03-31",
+                "WGV": 200000,
+                "InjectionRate": 2100,
+                "WithdrawalRate": 2800
+            },
+            {
+                "StartDate": "2025-04-01",
+                "EndDate": "2026-03-31",
+                "WGV": 300000,
+                "InjectionRate": 5000,
+                "WithdrawalRate": 7000
+            }
+        ]
+    },
+    {
+        "GasStorageName": "Melichar",
+        "InjectionSeason": [4, 5, 6, 7, 8, 9],
+        "StatesToDate": {"5": 0.05, "7": 0.3, "9": 0.6, "11": 0.9},
+        "DatesToEmptyStorage": [],
+        "InjectionCurve": [
+            [0,8,16,48,75,82,91,96],
+            [8,16,48,75,82,91,96,100],
+            [50,75,100,93,80,65,55,20]
+        ],
+        "WithdrawalCurve": [
+            [0,3,15,35,72,85],
+            [3,15,35,72,85,100],
+            [18,53,78,100,73,40]
+        ],
+        "TimePeriods": [
+            {
+                "StartDate": "2023-04-01",
+                "EndDate": "2024-03-31",
+                "WGV": 150000,
+                "InjectionRate": 2300,
+                "WithdrawalRate": 3000
+            },
+            {
+                "StartDate": "2024-04-01",
+                "EndDate": "2025-03-31",
+                "WGV": 200000,
+                "InjectionRate": 2100,
+                "WithdrawalRate": 2800
+            },
+            {
+                "StartDate": "2025-04-01",
+                "EndDate": "2026-03-31",
+                "WGV": 300000,
+                "InjectionRate": 5000,
+                "WithdrawalRate": 7000
+            }
+        ]
+    }
+]
