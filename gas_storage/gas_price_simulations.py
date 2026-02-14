@@ -13,8 +13,8 @@ class GasPriceSimulations:
         self.n_paths = n_paths
         self.index: pd.DatetimeIndex | None = None
 
-    def get_simulations(self, number_of_simulations: int) -> np.ndarray:
-        p_series = self.get_gas_fwd()
+    def get_simulations(self, number_of_simulations: int, date_start: dt.datetime) -> np.ndarray:
+        p_series = self.get_gas_fwd(date_start=date_start)
         p = p_series.values
 
         n_steps = len(p_series)
@@ -33,7 +33,7 @@ class GasPriceSimulations:
 
         return paths
 
-    def get_gas_fwd(self) -> pd.Series:
+    def get_gas_fwd(self, date_start: dt.datetime) -> pd.Series:
         gas_fwd = pd.read_csv(self.data_path / "gas_fwd.csv", parse_dates=True, index_col="date")
         gas_fwd.index.name = None
         gas_fwd = gas_fwd.reindex(
@@ -42,6 +42,7 @@ class GasPriceSimulations:
             ),
             method="ffill",
         )
+        gas_fwd = gas_fwd.loc[date_start :]
         self.index = gas_fwd.index
         return gas_fwd["price"]
 
